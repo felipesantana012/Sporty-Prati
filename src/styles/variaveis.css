@@ -1,0 +1,16 @@
+:root{
+    --font-prinicpal:"Roboto", sans-serif;
+
+    --cor-lilas-700:RGB(122, 37, 248);
+    --cor-lilas-500:RGB(148, 80, 249);
+    --cor-lilas-300:RGB(155, 240, 225);
+
+    --cor-font-principal:white;
+    --cor-background-principal:rgb(240, 240, 240);
+    --linear-gradiente:linear-gradient(70deg, rgb(230, 0, 127), rgb(132, 0, 172));
+
+    --tempo-transicao: all 0.3s;
+    --tamanho-scale: scale(1.1);
+
+
+}

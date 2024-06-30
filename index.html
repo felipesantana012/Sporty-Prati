@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/imports.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="/" class="logo">
+            <i class="fa-brands fa-spotify"></i>
+            <p>Spotify</p>
+        </a>
+
+        <nav class="menu-pc">
+            <div class="menu-pc__links">
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Baixar</a></li>
+                    <li>|</li>
+                    <li><a href="#">Inscrever-se</a></li>
+                    <li><a href="#">Entrar</a></li>
+                </ul>
+        </nav>
+
+        <nav class="menu-mobile">
+
+            <div class="menu-mobile__icone">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-mobile__links">
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Baixar</a></li>
+                    <li><a href="#">Inscrever-se</a></li>
+                    <li><a href="#">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="container-principal">
+            <div class="img-parallax"></div>
+
+
+            <div class="carrosel">
+                <button class="carrosel-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <div id="gallery"></div>
+                <button class="carrosel-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+        </section>
+
+
+
+
+
+
+   
+
+    </main>
+    <script src="/src/script/menu-burguer.js"></script>
+    <script src="/src/script/carrosel.js"></script>
+
+</body>
+
+</html>

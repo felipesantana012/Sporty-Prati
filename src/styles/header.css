@@ -1,0 +1,128 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.5));
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+}
+
+
+header .logo{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cor-font-principal);
+    transition: var(--tempo-transicao);
+}
+
+header .logo:hover{
+    transform: var(--tamanho-scale);
+    opacity: 1;
+}
+
+header .menu-pc ul{
+    display: flex;
+    gap: 15px;
+}
+
+header .menu-pc ul li{
+    list-style: none;
+    transition: var(--tempo-transicao);
+}
+
+header .menu-pc ul li:hover{
+    transform: var(--tamanho-scale);
+}
+
+header .menu-pc ul li a{
+    font-size: 18px;
+}
+
+
+
+/* MENU BURGUER */
+.menu-mobile{
+    display: none;   
+   
+}
+
+.menu-mobile__icone{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: var(--tempo-transicao);
+    color: var(--cor-font-principal);
+    opacity: 0.9;
+}
+
+.menu-mobile__icone:hover{
+    opacity: 1;
+    transform: var(--tamanho-scale);
+}
+
+
+.menu-mobile__icone:active{
+   opacity: 0.7;
+}
+
+.menu-mobile__links {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    width: 0;
+    height: auto;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.5));
+    filter: brightness(1);
+    backdrop-filter: blur(1px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.menu-mobile__links.open {
+    width: 100%;
+}
+
+
+.menu-mobile__links ul li {
+    margin: 20px 0;
+    transition: linear 0.3s;
+    text-align: center;
+}
+
+
+.menu-mobile__links ul li a {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .menu-pc{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: flex;
+    }
+    
+    .menu-mobile__icone {
+        display: flex;
+    }
+
+    .menu-mobile__links.open {
+        display: flex;
+    }
+
+    
+}
