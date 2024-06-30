@@ -68,5 +68,19 @@
 
 .next {
     transform: translateX(100%);
+}
+
+
+@media screen and (max-width: 700px) {
+    
+.container-principal{
+    height: 500px;
+    align-items: start;
+}
+
+#gallery{
+    justify-content: flex-end;
+    align-items: end;
+}
 
 }
