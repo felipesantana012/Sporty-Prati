@@ -1,6 +1,6 @@
 
 .container-principal{
-    height: 600px;
+    height: 90vh !important;
     width: 100%;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 
     min-height: 400px;
     height: 60%;
@@ -105,7 +105,7 @@
 }
 
 .free{
-    background: var(--cor-lilas-500);
+    background: var(--cor-lilas-700);
 }
 
 .premium{
@@ -117,7 +117,7 @@
 @media screen and (max-width: 700px) {
     
 .container-principal{
-    height: 500px;
+    height: 550px;
     align-items: start;
 }
 
@@ -127,8 +127,23 @@
 }
 
 .container-principal-btns{
-    bottom: -80px;
+    bottom: -85px;
     flex-direction: column;
 }
+
+}
+
+@media screen and (max-width: 340px) {
+
+.container-principal{
+    height: 100vh !important;}
+
+    .container-principal-carrosel{
+        min-height: 370px;
+    }
+
+    .container-principal-btns{
+        gap: 6px;
+    }
 
 }
