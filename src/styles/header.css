@@ -11,7 +11,7 @@ header{
 }
 
 
-header .logo{
+.logo{
     align-items: center;
     display: flex;
     gap: 5px;

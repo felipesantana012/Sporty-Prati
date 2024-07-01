@@ -1,4 +1,79 @@
 footer{
+    background-color: black;
+    color: var(--cor-font-principal);
+    gap: 1rem;
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+.rodape-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.rodape-links-empresa, .rodape-links-comunidades, .rodape-links-uteis{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-links-empresa h4, .rodape-links-comunidades h4, .rodape-links-uteis h4{
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.rodape-redeSocial{
+    display: flex;
+    gap: 10px;
+}
+
+.rodape-redeSocial a{
+    padding: 0.8rem;
+    background-color: RGB(31, 31, 31);
+    border-radius: 50%;
+}
+
+.rodape-redeSocial i{
+   
+    font-size: 32px;
+}
+
+@media screen and (max-width:800px) {
+    .rodape-redeSocial{
+        flex-direction: column;
+    }
+
+    .rodape-redeSocial a{
+        padding: 0.5rem;
+    }
+
+    .rodape-redeSocial i{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    footer{
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .rodape-links{
+        width: 100%;
+     
+    }
+
+    .rodape-redeSocial i{
+        font-size: 18px;
+    }
+
+    .rodape-redeSocial{
+        flex-direction: row;
+    }
 }
