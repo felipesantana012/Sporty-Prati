@@ -2,12 +2,12 @@
     margin: 2rem 4rem;
     display: flex;
     gap: 20px;
-
 }
 
 .sobre-imgs{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 
-@media screen and (max-width: 964px) {
+@media screen and (max-width: 1090px) {
 
     .container-sobre{
         margin: 1rem 1rem;

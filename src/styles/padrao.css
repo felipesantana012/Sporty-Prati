@@ -7,11 +7,18 @@
 body{
     font-family:  var(--font-prinicpal);
     background-color: var(--cor-background-principal);  
+    
 }
+
+.content{
+    overflow: hidden;
+}
+
 
 main{
     height: auto;
     width: 100%;
+    
 }
 
 li{
